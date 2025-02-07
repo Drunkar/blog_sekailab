@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ja" prefix="og: https://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8">
+		<link rel="pingback" href="https://Drunkar.github.io/xmlrpc.php">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>自作PCにubuntuでdeep learning用の環境とかを整える | せかいらぼ</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+		<!-- All in One SEO 4.5.9.1 - aioseo.com -->
+		<meta name="robots" content="max-image-preview:large" />
+		<link rel="canonical" href="https://Drunkar.github.io/2018/11/16/setup-enviroment-for-dl-on-self-build-pc-ubuntu/" />
+		<meta name="generator" content="All in One SEO (AIOSEO) 4.5.9.1" />
+		<meta property="og:locale" content="ja_JP" />
+		<meta property="og:site_name" content="せかいらぼ" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="自作PCにubuntuでdeep learning用の環境とかを整える | せかいらぼ" />
+		<meta property="og:url" content="https://Drunkar.github.io/2018/11/16/setup-enviroment-for-dl-on-self-build-pc-ubuntu/" />
+		<meta property="og:image" content="https://Drunkar.github.io/wp-content/uploads/2018/06/MachineLearning.png" />
+		<meta property="og:image:secure_url" content="https://Drunkar.github.io/wp-content/uploads/2018/06/MachineLearning.png" />
+		<meta property="og:image:width" content="560" />
+		<meta property="og:image:height" content="315" />
+		<meta property="article:published_time" content="2018-11-16T10:56:32+00:00" />
+		<meta property="article:modified_time" content="2019-03-10T18:17:32+00:00" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@Drunkar" />
+		<meta name="twitter:title" content="自作PCにubuntuでdeep learning用の環境とかを整える | せかいらぼ" />
+		<meta name="twitter:creator" content="@Drunkar" />
+		<meta name="twitter:image" content="https://Drunkar.github.io/wp-content/uploads/2018/06/MachineLearning.png" />
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"Article","@id":"https:\/\/Drunkar.github.io\/2018\/11\/16\/setup-enviroment-for-dl-on-self-build-pc-ubuntu\/#article","name":"\u81ea\u4f5cPC\u306bubuntu\u3067deep learning\u7528\u306e\u74b0\u5883\u3068\u304b\u3092\u6574\u3048\u308b | \u305b\u304b\u3044\u3089\u307c","headline":"\u81ea\u4f5cPC\u306bubuntu\u3067deep learning\u7528\u306e\u74b0\u5883\u3068\u304b\u3092\u6574\u3048\u308b","author":{"@id":"https:\/\/Drunkar.github.io\/author\/drunkar\/#author"},"publisher":{"@id":"https:\/\/Drunkar.github.io\/#organization"},"image":{"@type":"ImageObject","url":"https:\/\/Drunkar.github.io\/wp-content\/uploads\/2018\/06\/MachineLearning.png","width":560,"height":315},"datePublished":"2018-11-16T19:56:32+09:00","dateModified":"2019-03-11T03:17:32+09:00","inLanguage":"ja","mainEntityOfPage":{"@id":"https:\/\/Drunkar.github.io\/2018\/11\/16\/setup-enviroment-for-dl-on-self-build-pc-ubuntu\/#webpage"},"isPartOf":{"@id":"https:\/\/Drunkar.github.io\/2018\/11\/16\/setup-enviroment-for-dl-on-self-build-pc-ubuntu\/#webpage"},"articleSection":"articles, machine_learning, python"},{"@type":"BreadcrumbList","@id":"https:\/\/Drunkar.github.io\/2018\/11\/16\/setup-enviroment-for-dl-on-self-build-pc-ubuntu\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/Drunkar.github.io\/#listItem","position":1,"name":"\u5bb6","item":"https:\/\/Drunkar.github.io\/","nextItem":"https:\/\/Drunkar.github.io\/2018\/#listItem"},{"@type":"ListItem","@id":"https:\/\/Drunkar.github.io\/2018\/#listItem","position":2,"name":"2018","item":"https:\/\/Drunkar.github.io\/2018\/","nextItem":"https:\/\/Drunkar.github.io\/2018\/11\/#listItem","previousItem":"https:\/\/Drunkar.github.io\/#listItem"},{"@type":"ListItem","@id":"https:\/\/Drunkar.github.io\/2018\/11\/#listItem","position":3,"name":"November","item":"https:\/\/Drunkar.github.io\/2018\/11\/","nextItem":"https:\/\/Drunkar.github.io\/2018\/11\/16\/#listItem","previousItem":"https:\/\/Drunkar.github.io\/2018\/#listItem"},{"@type":"ListItem","@id":"https:\/\/Drunkar.github.io\/2018\/11\/16\/#listItem","position":4,"name":"16","item":"https:\/\/Drunkar.github.io\/2018\/11\/16\/","nextItem":"https:\/\/Drunkar.github.io\/2018\/11\/16\/setup-enviroment-for-dl-on-self-build-pc-ubuntu\/#listItem","previousItem":"https:\/\/Drunkar.github.io\/2018\/11\/#listItem"},{"@type":"ListItem","@id":"https:\/\/Drunkar.github.io\/2018\/11\/16\/setup-enviroment-for-dl-on-self-build-pc-ubuntu\/#listItem","position":5,"name":"\u81ea\u4f5cPC\u306bubuntu\u3067deep learning\u7528\u306e\u74b0\u5883\u3068\u304b\u3092\u6574\u3048\u308b","previousItem":"https:\/\/Drunkar.github.io\/2018\/11\/16\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/Drunkar.github.io\/#organization","name":"\u305b\u304b\u3044\u3089\u307c","url":"https:\/\/Drunkar.github.io\/","logo":{"@type":"ImageObject","url":"https:\/\/Drunkar.github.io\/wp-content\/uploads\/2018\/01\/cropped-title_wc_retina-1024x407-03.png","@id":"https:\/\/Drunkar.github.io\/2018\/11\/16\/setup-enviroment-for-dl-on-self-build-pc-ubuntu\/#organizationLogo","width":4301,"height":1101},"image":{"@id":"https:\/\/Drunkar.github.io\/2018\/11\/16\/setup-enviroment-for-dl-on-self-build-pc-ubuntu\/#organizationLogo"},"sameAs":["https:\/\/twitter.com\/Drunkar"]},{"@type":"Person","@id":"https:\/\/Drunkar.github.io\/author\/drunkar\/#author","url":"https:\/\/Drunkar.github.io\/author\/drunkar\/","name":"Drunkar","image":{"@type":"ImageObject","@id":"https:\/\/Drunkar.github.io\/2018\/11\/16\/setup-enviroment-for-dl-on-self-build-pc-ubuntu\/#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/9ca34479617ccb8284b89b84fb199041?s=96&d=mm&r=g","width":96,"height":96,"caption":"Drunkar"}},{"@type":"WebPage","@id":"https:\/\/Drunkar.github.io\/2018\/11\/16\/setup-enviroment-for-dl-on-self-build-pc-ubuntu\/#webpage","url":"https:\/\/Drunkar.github.io\/2018\/11\/16\/setup-enviroment-for-dl-on-self-build-pc-ubuntu\/","name":"\u81ea\u4f5cPC\u306bubuntu\u3067deep learning\u7528\u306e\u74b0\u5883\u3068\u304b\u3092\u6574\u3048\u308b | \u305b\u304b\u3044\u3089\u307c","inLanguage":"ja","isPartOf":{"@id":"https:\/\/Drunkar.github.io\/#website"},"breadcrumb":{"@id":"https:\/\/Drunkar.github.io\/2018\/11\/16\/setup-enviroment-for-dl-on-self-build-pc-ubuntu\/#breadcrumblist"},"author":{"@id":"https:\/\/Drunkar.github.io\/author\/drunkar\/#author"},"creator":{"@id":"https:\/\/Drunkar.github.io\/author\/drunkar\/#author"},"image":{"@type":"ImageObject","url":"https:\/\/Drunkar.github.io\/wp-content\/uploads\/2018\/06\/MachineLearning.png","@id":"https:\/\/Drunkar.github.io\/2018\/11\/16\/setup-enviroment-for-dl-on-self-build-pc-ubuntu\/#mainImage","width":560,"height":315},"primaryImageOfPage":{"@id":"https:\/\/Drunkar.github.io\/2018\/11\/16\/setup-enviroment-for-dl-on-self-build-pc-ubuntu\/#mainImage"},"datePublished":"2018-11-16T19:56:32+09:00","dateModified":"2019-03-11T03:17:32+09:00"},{"@type":"WebSite","@id":"https:\/\/Drunkar.github.io\/#website","url":"https:\/\/Drunkar.github.io\/","name":"\u305b\u304b\u3044\u3089\u307c","inLanguage":"ja","publisher":{"@id":"https:\/\/Drunkar.github.io\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+<link rel="alternate" type="application/rss+xml" title="せかいらぼ &raquo; フィード" href="https://Drunkar.github.io/feed/" />
+<link rel="alternate" type="application/rss+xml" title="せかいらぼ &raquo; コメントフィード" href="https://Drunkar.github.io/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="せかいらぼ &raquo; 自作PCにubuntuでdeep learning用の環境とかを整える のコメントのフィード" href="https://Drunkar.github.io/2018/11/16/setup-enviroment-for-dl-on-self-build-pc-ubuntu/feed/" />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.25.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+		<!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
+					<!-- No tracking code set -->
+				<!-- / Google Analytics by MonsterInsights -->
+		<link rel='stylesheet' id='mci-footnotes-jquery-tooltips-pagelayout-none-css' href='https://Drunkar.github.io/wp-content/plugins/footnotes/css/footnotes-jqttbrpl0.min.css?ver=2.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://Drunkar.github.io/wp-includes/css/dist/block-library/style.min.css?ver=6.7.1' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='pz-linkcard-css' href='//Drunkar.github.io/wp-content/uploads/pz-linkcard/style.css?ver=2.5.3.30' type='text/css' media='all' />
+<link rel='stylesheet' id='wordpress-popular-posts-css-css' href='https://Drunkar.github.io/wp-content/plugins/wordpress-popular-posts/assets/css/wpp.css?ver=6.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='tokimeki-css' href='https://Drunkar.github.io/wp-content/themes/tokimeki/asset/css/style.min.css' type='text/css' media='all' />
+<style id='tokimeki-inline-css' type='text/css'>
+.site-header__inner, .primary-menu > .menu-item > a {
+		background: #00b3c6;
+	}
+a, .button.hollow, .breadcrumbs a, .color-reverse:hover, .posts__item h2 a:hover, .widget-recent-post li:hover .widget-recent-post__meta {
+		color: #00b3c6;
+	}
+	.button, .button.primary, .button.hollow.primary, .badge, .button-group.primary .button, .label, input[type="submit"], .main-content__pagination a, .main-content__pagination > span, .page-numbers {
+		background: #00b3c6;
+	}
+	.button.hollow, .button.hollow.primary {
+		border: 1px solid #00b3c6;
+	}
+	.primary-menu > .menu-item:hover::after {
+		border-bottom-color: #00b3c6;
+	}
+	.site-footer {
+		border-bottom: 6px #00b3c6 solid;
+	}
+</style>
+<script type="text/javascript" src="https://Drunkar.github.io/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://Drunkar.github.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://Drunkar.github.io/wp-content/plugins/footnotes/js/jquery.tools.min.js?ver=1.2.7.redacted.2" id="mci-footnotes-jquery-tools-js"></script>
+<script type="application/json" id="wpp-json">
+
+{"sampling_active":0,"sampling_rate":100,"ajax_url":"https:\/\/Drunkar.github.io\/wp-json\/wordpress-popular-posts\/v1\/popular-posts","api_url":"https:\/\/Drunkar.github.io\/wp-json\/wordpress-popular-posts","ID":3035,"token":"9c19c691d1","lang":0,"debug":0}
+
+</script>
+<script type="text/javascript" src="https://Drunkar.github.io/wp-content/plugins/wordpress-popular-posts/assets/js/wpp.min.js?ver=6.4.2" id="wpp-js-js"></script>
+<link rel="https://api.w.org/" href="https://Drunkar.github.io/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://Drunkar.github.io/wp-json/wp/v2/posts/3035" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://Drunkar.github.io/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.7.1" />
+<link rel='shortlink' href='https://Drunkar.github.io/?p=3035' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://Drunkar.github.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flocalhost%2Fwordpress%2F2018%2F11%2F16%2Fsetup-enviroment-for-dl-on-self-build-pc-ubuntu%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://Drunkar.github.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flocalhost%2Fwordpress%2F2018%2F11%2F16%2Fsetup-enviroment-for-dl-on-self-build-pc-ubuntu%2F&#038;format=xml" />
+<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//Drunkar.github.io/?wordfence_lh=1&hid=ACB0D7A2478FB0E079848566771795AB');
+</script><script type="text/javascript" src="//Drunkar.github.io/?wordfence_syncAttackData=1738931175.8939" async></script>            <style id="wpp-loading-animation-styles">@-webkit-keyframes bgslide{from{background-position-x:0}to{background-position-x:-200%}}@keyframes bgslide{from{background-position-x:0}to{background-position-x:-200%}}.wpp-widget-placeholder,.wpp-widget-block-placeholder,.wpp-shortcode-placeholder{margin:0 auto;width:60px;height:3px;background:#dd3737;background:linear-gradient(90deg,#dd3737 0%,#571313 10%,#dd3737 100%);background-size:200% auto;border-radius:3px;-webkit-animation:bgslide 1s infinite linear;animation:bgslide 1s infinite linear}</style>
+            <link rel="icon" href="https://Drunkar.github.io/wp-content/uploads/2018/01/cropped-fabicon_large-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://Drunkar.github.io/wp-content/uploads/2018/01/cropped-fabicon_large-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://Drunkar.github.io/wp-content/uploads/2018/01/cropped-fabicon_large-180x180.png" />
+<meta name="msapplication-TileImage" content="https://Drunkar.github.io/wp-content/uploads/2018/01/cropped-fabicon_large-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			body {
+	font-family: 'Noto Sans Japanese', SourceHanSansJP-Light, YuGothic, 'Yu Gothic', "游ゴシック体", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "MS PGothic", Arial, Helvetica, Verdana, sans-serif;
+}
+
+.site-main-article {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 1em 1.2em 5em 1.2em;
+}
+
+.post__content p, .post__content dl, .post__content ol, .post__content ul,
+.post__content pre{
+	padding: 0em 2em;
+}
+
+.post__content table {
+	margin: 0em 2em;
+}
+
+h2 {
+    color: #666;
+    font-weight: bold;
+}
+
+.post__content h2, .post__content h3, .post__content h4 {
+	font-weight: bold;
+	color: #444;
+}
+
+.post__content h2 {
+    font-size: 2.2rem;
+    margin-top: 2em;
+    position: relative;
+    display: inline-block;
+    padding: 0 2em 0 0.5em !important;
+    vertical-align: middle;
+    background: #00b3c6;
+    color: #ffffff;
+    border-radius: 5px 50px 0 0;
+    font-weight: bolder;
+    width: inherit;
+    box-shadow: 2px 4px 0 #ccc;
+}
+
+.site-header__inner, .primary-menu > .menu-item > a {
+    color: #efefef;
+}
+
+.site-header__logo {
+    margin: 0;
+}
+.site-header__logo {
+    max-height: 70px;
+}
+.site-main {
+    padding: 1em 1.2em 5em 1.2em;
+}
+.site-header__inner {
+    box-shadow: none;
+}
+
+.top-post__description h2 {
+    text-shadow: 2px 2px #444;
+	color: #fefefe;
+}
+.top-post__description-cat {
+	text-shadow: 1.5px 1.5px #444;
+}
+
+.top-post {
+  margin-bottom: 2em;
+	box-shadow: 5px 10px #009eaf;
+}
+
+.posts__item .posts__item-thumb {
+    height: calc(500px / 2);
+}
+
+.posts__item .posts__item-title {
+    color: #444;
+    font-weight: bold;
+}
+
+.posts__item {
+	border-left: 1px solid #444;
+	border-bottom: 1px solid #444;
+  box-shadow: 4px 4px #009eaf;  
+	background: #fefefe;
+	border-radius: 50px 10px 10px 10px;
+}
+
+p {
+    font-family: 'Noto Sans Japanese', SourceHanSansJP-Light, YuGothic, 'Yu Gothic', "游ゴシック体", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "MS PGothic", Arial, Helvetica, Verdana, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    color: #444;
+    overflow: hidden;
+    font-size: 17px;
+    line-height: 1.6;
+    word-wrap: break-word;
+    max-width: 700px;
+}
+
+.sidebar h2 {
+    color: #666;
+    font-weight: bold;
+}
+
+.wpp-list li {
+    margin: 0 0 1px 0;
+}
+
+.sns-icon {
+  font-size: 3em;
+	margin-right: .2em;
+}
+
+#searchBtnIcon {
+	color: #efefef;
+	font-size: 3em;
+}
+
+.site-footer {
+    background: #00b3c6;
+}
+
+.site-footer .copyright {
+    color: #efefef;
+}
+
+@media screen and (max-width: 1439px) {
+	.posts__item .posts__item-thumb {
+			height: calc((100vw - 340px - 2.4rem) * .48 / 2);
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.site-main-article {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 2em;
+  }
+
+	.posts__item .posts__item-thumb {
+    height: calc((100vw - 2.4rem) * .48 / 2);
+	}
+	.site-header__logo img {
+			padding: 0;
+	}
+
+	.site-header__logo {
+			max-height: 50px;
+	}
+	.site-main {
+    padding: 0em 0.2em 1em 0.2em;
+  }
+	
+	.post__content p, .post__content>dl, .post__content>ol, .post__content>ul{
+		font-size: 14px;
+	}
+	.post__content h1, .post__content h2, .post__content h3, .post__content h4, .post__content h5, .post__content h6, .post__content p, .post__content>dl, .post__content>ol, .post__content>ul {
+        margin-bottom: 1rem;
+    }
+	  .post__meta-top {
+        margin-bottom: 0.1rem;
+        font-size: 9px;
+    }
+	
+	.posts {
+    padding: 0.5em 2em 0 2em;
+    background: #efefef;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.top-post__item {
+		height: 150px;
+    width: 100%;
+    margin-bottom: 0.1em;
+    border-style: solid;
+    border-width: 2px;
+	}
+	.posts__item .posts__item-thumb {
+    height: calc((100vw - 2.4rem)/ 2);
+	}
+	
+	.posts__item .posts__item-title {
+    margin-top: .4em;
+	}
+	.posts__item .posts__item-description {
+    font-size: 9px;
+  }
+	.posts__item .posts__item-meta {
+    font-size: 9px;
+		padding: .2rem .8rem;
+  }
+	
+	.posts__item {
+    margin-bottom: 0.8rem;
+    box-shadow: 2px 2px #009eaf;
+}
+	
+	.post__content p, .post__content>dl, .post__content>ol, .post__content>ul,
+	.post__content>pre{
+		padding: 0em;
+		font-size: 17px;
+	}
+	
+	.post__header .post__meta {
+    margin: 0;
+  }
+	
+	#toc-sidebar {
+		display: none;
+	}
+
+}
+
+/* TOC */
+#toc_container {
+		margin: 2em 2.5em 1em -0.5em;
+	  background: none !important;
+	  border: none !important;
+	  min-width: 400px;
+}
+#toc_container .toc_title {
+		text-align: center;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    padding: 0 2em 0 0.5em !important;
+	  font-size: 2em;
+    vertical-align: middle;
+    background: #00b3c6;
+    color: #ffffff;
+    border-radius: 5px 50px 0 0;
+    font-weight: bolder;
+}
+#toc_container .toc_title:before {
+    font-family: 'FontAwesome';
+    content: '\f02d';
+    margin-right: 0.3em;
+}
+#toc_container .toc_list {
+		top: -3px;
+    position: relative;
+    padding: 1em;
+    border: solid 3px #00b3c6;
+    border-radius: 0px 20px 50px 20px;
+    box-shadow: 2px 2px 0 #00b3c6;
+}
+#toc_container p.toc_title+ul.toc_list {
+	  margin-top: 0 !important;
+}
+
+/* border block */
+.post__content .box {
+    margin: 2em 2.5em 1em 1.5em;
+}
+.post__content .box .box-title {
+	  position: relative;
+    display: inline-block;
+    padding: 0 2em 0 0.5em;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    font-size: 17px;
+    background: #00b3c6;
+    color: #ffffff;
+    border-radius: 5px 50px 0 0;
+	  font-weight: bolder;
+}
+.post__content .box .box-title:before {
+    font-family: 'FontAwesome';
+    content: '\f0a4';
+    margin-right: 0.3em;
+}
+.post__content .box .box-content {
+    top: -3px;
+    position: relative;
+    padding: 1em;
+    border: solid 3px #00b3c6;
+    border-radius: 0px 20px 50px 20px;
+	  box-shadow: 2px 2px 0 #00b3c6;
+}		</style>
+		
+<style type="text/css" media="all">
+.footnotes_reference_container {margin-top: 24px !important; margin-bottom: 0px !important;}
+.footnote_container_prepare > p {border-bottom: 1px solid #aaaaaa !important;}
+.footnote_tooltip { font-size: 13px !important; background-color: #cee9ea !important; border-width: 1px !important; border-style: solid !important; border-color: #999999 !important; border-radius: 3px !important; -webkit-box-shadow: 2px 2px 11px #dddddd; -moz-box-shadow: 2px 2px 11px #dddddd; box-shadow: 2px 2px 11px #dddddd;}
+.footnote_plugin_tooltip_text {
+  top: 0.5em !important;
+  color: #00b3c6;
+  text-decoration: underline;
+}
+
+.footnote_plugin_link {
+  color: #00b3c6;
+  text-decoration: underline;
+}
+
+.footnote_tooltip {
+  max-width: 600px;
+}
+
+#footnote_references_container {
+  width: 90%;
+  max-width: 650px;
+}
+
+.post__content table {
+    font-size: 0.9em;
+}
+
+#footnote_references_container tbody {
+  background-color: transparent;
+  border: none;
+}
+#footnote_references_container tbody tr:nth-child(even) {
+    background-color: transparent;
+}
+
+</style>
+        <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script data-ad-client="ca-pub-7499184562108487" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body class="post-template-default single single-post postid-3035 single-format-standard wp-custom-logo no-ja" itemscope itemtype="http://schema.org/Blog">
+	<a class="skip-link screen-reader-text" href="#main">コンテンツへスキップ</a>
+	<header class="site-header" id="header">
+	<div class="site-header__inner" itemscope itemtype="http://schema.org/WPHeader">
+		<div class="site-header__col-left">
+			<p class="site-header__logo" itemscope itemtype="http://schema.org/Organization" itemprop="publisher" id="data-site" role="banner">
+		<a href="https://Drunkar.github.io/" class="custom-logo-link" rel="home"><img width="4301" height="1101" src="https://Drunkar.github.io/wp-content/uploads/2018/01/cropped-title_wc_retina-1024x407-03.png" class="custom-logo" alt="せかいらぼ" decoding="async" fetchpriority="high" srcset="https://Drunkar.github.io/wp-content/uploads/2018/01/cropped-title_wc_retina-1024x407-03.png 4301w, https://Drunkar.github.io/wp-content/uploads/2018/01/cropped-title_wc_retina-1024x407-03-300x77.png 300w, https://Drunkar.github.io/wp-content/uploads/2018/01/cropped-title_wc_retina-1024x407-03-768x197.png 768w, https://Drunkar.github.io/wp-content/uploads/2018/01/cropped-title_wc_retina-1024x407-03-1024x262.png 1024w" sizes="(max-width: 4301px) 100vw, 4301px" /></a>	<meta itemprop="name" content="せかいらぼ">
+		<meta itemprop="description" content="">
+</p>						<nav class="site-header__menu" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+				<ul id="menu-menu" class="primary-menu"><li id="menu-item-2027" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2027"><a href="https://Drunkar.github.io/category/articles/">articles</a></li>
+<li id="menu-item-2028" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2028"><a href="https://Drunkar.github.io/category/stories/">stories</a></li>
+<li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822"><a href="https://Drunkar.github.io/about/">about</a></li>
+</ul>			</nav>
+						<form class="site-header__search-form" id="searchForm" method="get" aria-hidden="true" role="search" action="https://Drunkar.github.io/">
+				<input class="site-header__search-input" type="text" name="s" placeholder="検索...">
+			</form>
+		</div>
+		<div class="site-header__col-right">
+			<div class="site-header__search-button" id="searchBtn">
+				<i class="fa fa-search" id="searchBtnIcon"></i>
+				<button class="screen-reader-text">検索</button>
+			</div>
+					</div>
+	</div>
+		<div class="site-header__image">
+		<div class="header-image" style="background-image: url(https://sekailab.com/wp-content/uploads/2018/01/banner-03-03.png)"></div>
+	</div>
+		</header>
+		<div class="site-main-article">
+		<main class="content" id="main" role="main">
+						<article id="post-3035" class="post-3035 post type-post status-publish format-standard has-post-thumbnail hentry category-articles tag-machine_learning tag-python" itemscope itemtype="http://schema.org/BlogPosting" itemref="data-site">
+				<nav>
+					<ul class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+												<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="https://Drunkar.github.io/" rel="home" itemprop="item"><span itemprop="name">ホーム</span></a><meta itemprop="position" content="1"></li>
+												<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="https://Drunkar.github.io/category/articles/" itemprop="item"><span itemprop="name">articles</span></a><meta itemprop="position" content="2"></li>
+						<li class="current" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="item name">自作PCにubuntuでdeep learning用の環境とかを整える</span><meta itemprop="position" content="3"></li>
+					</ul>
+				</nav>
+				<header class="post__header">
+										<div class="post__thumb" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+						<img width="560" height="315" src="https://Drunkar.github.io/wp-content/uploads/2018/06/MachineLearning.png" class="attachment-large size-large wp-post-image" alt="" itemprop="thumbnail" decoding="async" srcset="https://Drunkar.github.io/wp-content/uploads/2018/06/MachineLearning.png 560w, https://Drunkar.github.io/wp-content/uploads/2018/06/MachineLearning-300x169.png 300w" sizes="(max-width: 560px) 100vw, 560px" />						<meta itemprop="name" content="">
+						<meta itemprop="url" content="https://Drunkar.github.io/wp-content/uploads/2018/06/MachineLearning.png">
+						<meta itemprop="width" content="560">
+						<meta itemprop="height" content="315">
+					</div>
+															<div class="post__meta">
+											<div class="post__meta-top">
+							<span class="meta-top__cat"><a href="https://Drunkar.github.io/category/articles/" itemprop="genre">articles</a></span>
+							<time class="meta-top__date" datetime="2018-11-16T19:56:32+09:00" itemprop='datePublished'>2018年11月16日</time>
+							<span class="meta-top__author" itemscope itemtype="http://schema.org/Person" itemprop="author">by Drunkar<meta itemprop="name" content="Drunkar"></span>
+						</div>
+						<h1 class="post__title" itemprop="headline">自作PCにubuntuでdeep learning用の環境とかを整える</h1>
+					</div>
+				</header>
+                                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- article-start -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7499184562108487"
+     data-ad-slot="2454853744"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+				<div class="post__main">
+					<div id="main-content" class="post__content" itemprop="articleBody">
+						<br />
+<b>Fatal error</b>:  Uncaught Error: Call to undefined function imagecreatefromstring() in C:\xampp\htdocs\wordpress\wp-content\plugins\pz-linkcard\pz-linkcard.php:2144
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\pz-linkcard\pz-linkcard.php(818): class_pz_linkcard-&gt;pz_GetThumbnail('https://sekaila...')
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\pz-linkcard\pz-linkcard.php(485): class_pz_linkcard-&gt;pz_GetHTML(Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(434): class_pz_linkcard-&gt;shortcode(Array, '', 'blogcard')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(blogca...', 'do_shortcode_ta...', '[blogcard url=&quot;...')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): do_shortcode('[blogcard url=&quot;...')
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(205): WP_Hook-&gt;apply_filters('[blogcard url=&quot;...', Array)
+#7 C:\xampp\htdocs\wordpress\wp-includes\post-template.php(256): apply_filters('the_content', '[blogcard url=&quot;...')
+#8 C:\xampp\htdocs\wordpress\wp-content\themes\tokimeki\single.php(69): the_content()
+#9 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#12 {main}
+  thrown in <b>C:\xampp\htdocs\wordpress\wp-content\plugins\pz-linkcard\pz-linkcard.php</b> on line <b>2144</b><br />
