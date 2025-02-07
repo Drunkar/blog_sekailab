@@ -2,7 +2,7 @@
 <html dir="ltr" lang="ja" prefix="og: https://ogp.me/ns#">
 <head>
 	<meta charset="UTF-8">
-		<link rel="pingback" href="https://Drunkar.github.io/xmlrpc.php">
+		<link rel="pingback" href="https://drunkar.github.io/blog_sekailab/xmlrpc.php">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>OpenSCADのテスト with CircleCI | せかいらぼ</title>
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
@@ -10,16 +10,16 @@
 		<!-- All in One SEO 4.5.9.1 - aioseo.com -->
 		<meta name="description" content="OpenSCADのテストってどうすれば良いのだろうか とりあえずモジュールがビルドできる 変数の未定義はなぜかERRORでなくWARNINGとして処理されるので、WARNINGでもビルド失敗としたい 完成品は https://github.com/Drunkar/openscad_modules です。CircleCIによってstlが生成されます。" />
 		<meta name="robots" content="max-image-preview:large" />
-		<link rel="canonical" href="https://Drunkar.github.io/2016/08/24/openscad-test-circleci/" />
+		<link rel="canonical" href="https://drunkar.github.io/blog_sekailab/2016/08/24/openscad-test-circleci/" />
 		<meta name="generator" content="All in One SEO (AIOSEO) 4.5.9.1" />
 		<meta property="og:locale" content="ja_JP" />
 		<meta property="og:site_name" content="せかいらぼ" />
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content="OpenSCADのテスト with CircleCI | せかいらぼ" />
 		<meta property="og:description" content="OpenSCADのテストってどうすれば良いのだろうか とりあえずモジュールがビルドできる 変数の未定義はなぜかERRORでなくWARNINGとして処理されるので、WARNINGでもビルド失敗としたい 完成品は https://github.com/Drunkar/openscad_modules です。CircleCIによってstlが生成されます。" />
-		<meta property="og:url" content="https://Drunkar.github.io/2016/08/24/openscad-test-circleci/" />
-		<meta property="og:image" content="https://Drunkar.github.io/wp-content/uploads/2016/08/81b270d2b77f26c6fe2e1f68ba40905a.png" />
-		<meta property="og:image:secure_url" content="https://Drunkar.github.io/wp-content/uploads/2016/08/81b270d2b77f26c6fe2e1f68ba40905a.png" />
+		<meta property="og:url" content="https://drunkar.github.io/blog_sekailab/2016/08/24/openscad-test-circleci/" />
+		<meta property="og:image" content="https://drunkar.github.io/blog_sekailab/wp-content/uploads/2016/08/81b270d2b77f26c6fe2e1f68ba40905a.png" />
+		<meta property="og:image:secure_url" content="https://drunkar.github.io/blog_sekailab/wp-content/uploads/2016/08/81b270d2b77f26c6fe2e1f68ba40905a.png" />
 		<meta property="og:image:width" content="1312" />
 		<meta property="og:image:height" content="1028" />
 		<meta property="article:published_time" content="2016-08-24T11:24:21+00:00" />
@@ -29,21 +29,21 @@
 		<meta name="twitter:title" content="OpenSCADのテスト with CircleCI | せかいらぼ" />
 		<meta name="twitter:description" content="OpenSCADのテストってどうすれば良いのだろうか とりあえずモジュールがビルドできる 変数の未定義はなぜかERRORでなくWARNINGとして処理されるので、WARNINGでもビルド失敗としたい 完成品は https://github.com/Drunkar/openscad_modules です。CircleCIによってstlが生成されます。" />
 		<meta name="twitter:creator" content="@Drunkar" />
-		<meta name="twitter:image" content="https://Drunkar.github.io/wp-content/uploads/2016/08/81b270d2b77f26c6fe2e1f68ba40905a.png" />
+		<meta name="twitter:image" content="https://drunkar.github.io/blog_sekailab/wp-content/uploads/2016/08/81b270d2b77f26c6fe2e1f68ba40905a.png" />
 		<script type="application/ld+json" class="aioseo-schema">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"Article","@id":"https:\/\/Drunkar.github.io\/2016\/08\/24\/openscad-test-circleci\/#article","name":"OpenSCAD\u306e\u30c6\u30b9\u30c8 with CircleCI | \u305b\u304b\u3044\u3089\u307c","headline":"OpenSCAD\u306e\u30c6\u30b9\u30c8 with CircleCI","author":{"@id":"https:\/\/Drunkar.github.io\/author\/drunkar\/#author"},"publisher":{"@id":"https:\/\/Drunkar.github.io\/#organization"},"image":{"@type":"ImageObject","url":"https:\/\/Drunkar.github.io\/wp-content\/uploads\/2016\/08\/81b270d2b77f26c6fe2e1f68ba40905a.png","width":1312,"height":1028},"datePublished":"2016-08-24T20:24:21+09:00","dateModified":"2018-01-06T15:33:01+09:00","inLanguage":"ja","mainEntityOfPage":{"@id":"https:\/\/Drunkar.github.io\/2016\/08\/24\/openscad-test-circleci\/#webpage"},"isPartOf":{"@id":"https:\/\/Drunkar.github.io\/2016\/08\/24\/openscad-test-circleci\/#webpage"},"articleSection":"articles, make, openscad"},{"@type":"BreadcrumbList","@id":"https:\/\/Drunkar.github.io\/2016\/08\/24\/openscad-test-circleci\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/Drunkar.github.io\/#listItem","position":1,"name":"\u5bb6","item":"https:\/\/Drunkar.github.io\/","nextItem":"https:\/\/Drunkar.github.io\/2016\/#listItem"},{"@type":"ListItem","@id":"https:\/\/Drunkar.github.io\/2016\/#listItem","position":2,"name":"2016","item":"https:\/\/Drunkar.github.io\/2016\/","nextItem":"https:\/\/Drunkar.github.io\/2016\/08\/#listItem","previousItem":"https:\/\/Drunkar.github.io\/#listItem"},{"@type":"ListItem","@id":"https:\/\/Drunkar.github.io\/2016\/08\/#listItem","position":3,"name":"August","item":"https:\/\/Drunkar.github.io\/2016\/08\/","nextItem":"https:\/\/Drunkar.github.io\/2016\/08\/24\/#listItem","previousItem":"https:\/\/Drunkar.github.io\/2016\/#listItem"},{"@type":"ListItem","@id":"https:\/\/Drunkar.github.io\/2016\/08\/24\/#listItem","position":4,"name":"24","item":"https:\/\/Drunkar.github.io\/2016\/08\/24\/","nextItem":"https:\/\/Drunkar.github.io\/2016\/08\/24\/openscad-test-circleci\/#listItem","previousItem":"https:\/\/Drunkar.github.io\/2016\/08\/#listItem"},{"@type":"ListItem","@id":"https:\/\/Drunkar.github.io\/2016\/08\/24\/openscad-test-circleci\/#listItem","position":5,"name":"OpenSCAD\u306e\u30c6\u30b9\u30c8 with CircleCI","previousItem":"https:\/\/Drunkar.github.io\/2016\/08\/24\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/Drunkar.github.io\/#organization","name":"\u305b\u304b\u3044\u3089\u307c","url":"https:\/\/Drunkar.github.io\/","logo":{"@type":"ImageObject","url":"https:\/\/Drunkar.github.io\/wp-content\/uploads\/2018\/01\/cropped-title_wc_retina-1024x407-03.png","@id":"https:\/\/Drunkar.github.io\/2016\/08\/24\/openscad-test-circleci\/#organizationLogo","width":4301,"height":1101},"image":{"@id":"https:\/\/Drunkar.github.io\/2016\/08\/24\/openscad-test-circleci\/#organizationLogo"},"sameAs":["https:\/\/twitter.com\/Drunkar"]},{"@type":"Person","@id":"https:\/\/Drunkar.github.io\/author\/drunkar\/#author","url":"https:\/\/Drunkar.github.io\/author\/drunkar\/","name":"Drunkar","image":{"@type":"ImageObject","@id":"https:\/\/Drunkar.github.io\/2016\/08\/24\/openscad-test-circleci\/#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/9ca34479617ccb8284b89b84fb199041?s=96&d=mm&r=g","width":96,"height":96,"caption":"Drunkar"}},{"@type":"WebPage","@id":"https:\/\/Drunkar.github.io\/2016\/08\/24\/openscad-test-circleci\/#webpage","url":"https:\/\/Drunkar.github.io\/2016\/08\/24\/openscad-test-circleci\/","name":"OpenSCAD\u306e\u30c6\u30b9\u30c8 with CircleCI | \u305b\u304b\u3044\u3089\u307c","description":"OpenSCAD\u306e\u30c6\u30b9\u30c8\u3063\u3066\u3069\u3046\u3059\u308c\u3070\u826f\u3044\u306e\u3060\u308d\u3046\u304b \u3068\u308a\u3042\u3048\u305a\u30e2\u30b8\u30e5\u30fc\u30eb\u304c\u30d3\u30eb\u30c9\u3067\u304d\u308b \u5909\u6570\u306e\u672a\u5b9a\u7fa9\u306f\u306a\u305c\u304bERROR\u3067\u306a\u304fWARNING\u3068\u3057\u3066\u51e6\u7406\u3055\u308c\u308b\u306e\u3067\u3001WARNING\u3067\u3082\u30d3\u30eb\u30c9\u5931\u6557\u3068\u3057\u305f\u3044 \u5b8c\u6210\u54c1\u306f https:\/\/github.com\/Drunkar\/openscad_modules \u3067\u3059\u3002CircleCI\u306b\u3088\u3063\u3066stl\u304c\u751f\u6210\u3055\u308c\u307e\u3059\u3002","inLanguage":"ja","isPartOf":{"@id":"https:\/\/Drunkar.github.io\/#website"},"breadcrumb":{"@id":"https:\/\/Drunkar.github.io\/2016\/08\/24\/openscad-test-circleci\/#breadcrumblist"},"author":{"@id":"https:\/\/Drunkar.github.io\/author\/drunkar\/#author"},"creator":{"@id":"https:\/\/Drunkar.github.io\/author\/drunkar\/#author"},"image":{"@type":"ImageObject","url":"https:\/\/Drunkar.github.io\/wp-content\/uploads\/2016\/08\/81b270d2b77f26c6fe2e1f68ba40905a.png","@id":"https:\/\/Drunkar.github.io\/2016\/08\/24\/openscad-test-circleci\/#mainImage","width":1312,"height":1028},"primaryImageOfPage":{"@id":"https:\/\/Drunkar.github.io\/2016\/08\/24\/openscad-test-circleci\/#mainImage"},"datePublished":"2016-08-24T20:24:21+09:00","dateModified":"2018-01-06T15:33:01+09:00"},{"@type":"WebSite","@id":"https:\/\/Drunkar.github.io\/#website","url":"https:\/\/Drunkar.github.io\/","name":"\u305b\u304b\u3044\u3089\u307c","inLanguage":"ja","publisher":{"@id":"https:\/\/Drunkar.github.io\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"Article","@id":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/24\/openscad-test-circleci\/#article","name":"OpenSCAD\u306e\u30c6\u30b9\u30c8 with CircleCI | \u305b\u304b\u3044\u3089\u307c","headline":"OpenSCAD\u306e\u30c6\u30b9\u30c8 with CircleCI","author":{"@id":"https:\/\/drunkar.github.io\/blog_sekailab\/author\/drunkar\/#author"},"publisher":{"@id":"https:\/\/drunkar.github.io\/blog_sekailab\/#organization"},"image":{"@type":"ImageObject","url":"https:\/\/drunkar.github.io\/blog_sekailab\/wp-content\/uploads\/2016\/08\/81b270d2b77f26c6fe2e1f68ba40905a.png","width":1312,"height":1028},"datePublished":"2016-08-24T20:24:21+09:00","dateModified":"2018-01-06T15:33:01+09:00","inLanguage":"ja","mainEntityOfPage":{"@id":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/24\/openscad-test-circleci\/#webpage"},"isPartOf":{"@id":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/24\/openscad-test-circleci\/#webpage"},"articleSection":"articles, make, openscad"},{"@type":"BreadcrumbList","@id":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/24\/openscad-test-circleci\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/drunkar.github.io\/blog_sekailab\/#listItem","position":1,"name":"\u5bb6","item":"https:\/\/drunkar.github.io\/blog_sekailab\/","nextItem":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/#listItem"},{"@type":"ListItem","@id":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/#listItem","position":2,"name":"2016","item":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/","nextItem":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/#listItem","previousItem":"https:\/\/drunkar.github.io\/blog_sekailab\/#listItem"},{"@type":"ListItem","@id":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/#listItem","position":3,"name":"August","item":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/","nextItem":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/24\/#listItem","previousItem":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/#listItem"},{"@type":"ListItem","@id":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/24\/#listItem","position":4,"name":"24","item":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/24\/","nextItem":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/24\/openscad-test-circleci\/#listItem","previousItem":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/#listItem"},{"@type":"ListItem","@id":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/24\/openscad-test-circleci\/#listItem","position":5,"name":"OpenSCAD\u306e\u30c6\u30b9\u30c8 with CircleCI","previousItem":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/24\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/drunkar.github.io\/blog_sekailab\/#organization","name":"\u305b\u304b\u3044\u3089\u307c","url":"https:\/\/drunkar.github.io\/blog_sekailab\/","logo":{"@type":"ImageObject","url":"https:\/\/drunkar.github.io\/blog_sekailab\/wp-content\/uploads\/2018\/01\/cropped-title_wc_retina-1024x407-03.png","@id":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/24\/openscad-test-circleci\/#organizationLogo","width":4301,"height":1101},"image":{"@id":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/24\/openscad-test-circleci\/#organizationLogo"},"sameAs":["https:\/\/twitter.com\/Drunkar"]},{"@type":"Person","@id":"https:\/\/drunkar.github.io\/blog_sekailab\/author\/drunkar\/#author","url":"https:\/\/drunkar.github.io\/blog_sekailab\/author\/drunkar\/","name":"Drunkar","image":{"@type":"ImageObject","@id":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/24\/openscad-test-circleci\/#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/9ca34479617ccb8284b89b84fb199041?s=96&d=mm&r=g","width":96,"height":96,"caption":"Drunkar"}},{"@type":"WebPage","@id":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/24\/openscad-test-circleci\/#webpage","url":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/24\/openscad-test-circleci\/","name":"OpenSCAD\u306e\u30c6\u30b9\u30c8 with CircleCI | \u305b\u304b\u3044\u3089\u307c","description":"OpenSCAD\u306e\u30c6\u30b9\u30c8\u3063\u3066\u3069\u3046\u3059\u308c\u3070\u826f\u3044\u306e\u3060\u308d\u3046\u304b \u3068\u308a\u3042\u3048\u305a\u30e2\u30b8\u30e5\u30fc\u30eb\u304c\u30d3\u30eb\u30c9\u3067\u304d\u308b \u5909\u6570\u306e\u672a\u5b9a\u7fa9\u306f\u306a\u305c\u304bERROR\u3067\u306a\u304fWARNING\u3068\u3057\u3066\u51e6\u7406\u3055\u308c\u308b\u306e\u3067\u3001WARNING\u3067\u3082\u30d3\u30eb\u30c9\u5931\u6557\u3068\u3057\u305f\u3044 \u5b8c\u6210\u54c1\u306f https:\/\/github.com\/Drunkar\/openscad_modules \u3067\u3059\u3002CircleCI\u306b\u3088\u3063\u3066stl\u304c\u751f\u6210\u3055\u308c\u307e\u3059\u3002","inLanguage":"ja","isPartOf":{"@id":"https:\/\/drunkar.github.io\/blog_sekailab\/#website"},"breadcrumb":{"@id":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/24\/openscad-test-circleci\/#breadcrumblist"},"author":{"@id":"https:\/\/drunkar.github.io\/blog_sekailab\/author\/drunkar\/#author"},"creator":{"@id":"https:\/\/drunkar.github.io\/blog_sekailab\/author\/drunkar\/#author"},"image":{"@type":"ImageObject","url":"https:\/\/drunkar.github.io\/blog_sekailab\/wp-content\/uploads\/2016\/08\/81b270d2b77f26c6fe2e1f68ba40905a.png","@id":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/24\/openscad-test-circleci\/#mainImage","width":1312,"height":1028},"primaryImageOfPage":{"@id":"https:\/\/drunkar.github.io\/blog_sekailab\/2016\/08\/24\/openscad-test-circleci\/#mainImage"},"datePublished":"2016-08-24T20:24:21+09:00","dateModified":"2018-01-06T15:33:01+09:00"},{"@type":"WebSite","@id":"https:\/\/drunkar.github.io\/blog_sekailab\/#website","url":"https:\/\/drunkar.github.io\/blog_sekailab\/","name":"\u305b\u304b\u3044\u3089\u307c","inLanguage":"ja","publisher":{"@id":"https:\/\/drunkar.github.io\/blog_sekailab\/#organization"}}]}
 		</script>
 		<!-- All in One SEO -->
 
-<link rel="alternate" type="application/rss+xml" title="せかいらぼ &raquo; フィード" href="https://Drunkar.github.io/feed/" />
-<link rel="alternate" type="application/rss+xml" title="せかいらぼ &raquo; コメントフィード" href="https://Drunkar.github.io/comments/feed/" />
-<link rel="alternate" type="application/rss+xml" title="せかいらぼ &raquo; OpenSCADのテスト with CircleCI のコメントのフィード" href="https://Drunkar.github.io/2016/08/24/openscad-test-circleci/feed/" />
+<link rel="alternate" type="application/rss+xml" title="せかいらぼ &raquo; フィード" href="https://drunkar.github.io/blog_sekailab/feed/" />
+<link rel="alternate" type="application/rss+xml" title="せかいらぼ &raquo; コメントフィード" href="https://drunkar.github.io/blog_sekailab/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="せかいらぼ &raquo; OpenSCADのテスト with CircleCI のコメントのフィード" href="https://drunkar.github.io/blog_sekailab/2016/08/24/openscad-test-circleci/feed/" />
 		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.25.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
 		<!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
 					<!-- No tracking code set -->
 				<!-- / Google Analytics by MonsterInsights -->
-		<link rel='stylesheet' id='mci-footnotes-jquery-tooltips-pagelayout-none-css' href='https://Drunkar.github.io/wp-content/plugins/footnotes/css/footnotes-jqttbrpl0.min.css?ver=2.7.3' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-block-library-css' href='https://Drunkar.github.io/wp-includes/css/dist/block-library/style.min.css?ver=6.7.1' type='text/css' media='all' />
+		<link rel='stylesheet' id='mci-footnotes-jquery-tooltips-pagelayout-none-css' href='https://drunkar.github.io/blog_sekailab/wp-content/plugins/footnotes/css/footnotes-jqttbrpl0.min.css?ver=2.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://drunkar.github.io/blog_sekailab/wp-includes/css/dist/block-library/style.min.css?ver=6.7.1' type='text/css' media='all' />
 <style id='classic-theme-styles-inline-css' type='text/css'>
 /*! This file is auto-generated */
 .wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
@@ -54,9 +54,9 @@
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
 :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
 </style>
-<link rel='stylesheet' id='pz-linkcard-css' href='//Drunkar.github.io/wp-content/uploads/pz-linkcard/style.css?ver=2.5.3.30' type='text/css' media='all' />
-<link rel='stylesheet' id='wordpress-popular-posts-css-css' href='https://Drunkar.github.io/wp-content/plugins/wordpress-popular-posts/assets/css/wpp.css?ver=6.4.2' type='text/css' media='all' />
-<link rel='stylesheet' id='tokimeki-css' href='https://Drunkar.github.io/wp-content/themes/tokimeki/asset/css/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pz-linkcard-css' href='//drunkar.github.io/blog_sekailab/wp-content/uploads/pz-linkcard/style.css?ver=2.5.3.30' type='text/css' media='all' />
+<link rel='stylesheet' id='wordpress-popular-posts-css-css' href='https://drunkar.github.io/blog_sekailab/wp-content/plugins/wordpress-popular-posts/assets/css/wpp.css?ver=6.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='tokimeki-css' href='https://drunkar.github.io/blog_sekailab/wp-content/themes/tokimeki/asset/css/style.min.css' type='text/css' media='all' />
 <style id='tokimeki-inline-css' type='text/css'>
 .site-header__inner, .primary-menu > .menu-item > a {
 		background: #00b3c6;
@@ -77,20 +77,20 @@ a, .button.hollow, .breadcrumbs a, .color-reverse:hover, .posts__item h2 a:hover
 		border-bottom: 6px #00b3c6 solid;
 	}
 </style>
-<script type="text/javascript" src="https://Drunkar.github.io/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-<script type="text/javascript" src="https://Drunkar.github.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
-<script type="text/javascript" src="https://Drunkar.github.io/wp-content/plugins/footnotes/js/jquery.tools.min.js?ver=1.2.7.redacted.2" id="mci-footnotes-jquery-tools-js"></script>
+<script type="text/javascript" src="https://drunkar.github.io/blog_sekailab/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://drunkar.github.io/blog_sekailab/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://drunkar.github.io/blog_sekailab/wp-content/plugins/footnotes/js/jquery.tools.min.js?ver=1.2.7.redacted.2" id="mci-footnotes-jquery-tools-js"></script>
 <script type="application/json" id="wpp-json">
 
-{"sampling_active":0,"sampling_rate":100,"ajax_url":"https:\/\/Drunkar.github.io\/wp-json\/wordpress-popular-posts\/v1\/popular-posts","api_url":"https:\/\/Drunkar.github.io\/wp-json\/wordpress-popular-posts","ID":1694,"token":"9c19c691d1","lang":0,"debug":0}
+{"sampling_active":0,"sampling_rate":100,"ajax_url":"https:\/\/drunkar.github.io\/blog_sekailab\/wp-json\/wordpress-popular-posts\/v1\/popular-posts","api_url":"https:\/\/drunkar.github.io\/blog_sekailab\/wp-json\/wordpress-popular-posts","ID":1694,"token":"9c19c691d1","lang":0,"debug":0}
 
 </script>
-<script type="text/javascript" src="https://Drunkar.github.io/wp-content/plugins/wordpress-popular-posts/assets/js/wpp.min.js?ver=6.4.2" id="wpp-js-js"></script>
-<link rel="https://api.w.org/" href="https://Drunkar.github.io/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://Drunkar.github.io/wp-json/wp/v2/posts/1694" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://Drunkar.github.io/xmlrpc.php?rsd" />
+<script type="text/javascript" src="https://drunkar.github.io/blog_sekailab/wp-content/plugins/wordpress-popular-posts/assets/js/wpp.min.js?ver=6.4.2" id="wpp-js-js"></script>
+<link rel="https://api.w.org/" href="https://drunkar.github.io/blog_sekailab/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://drunkar.github.io/blog_sekailab/wp-json/wp/v2/posts/1694" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://drunkar.github.io/blog_sekailab/xmlrpc.php?rsd" />
 <meta name="generator" content="WordPress 6.7.1" />
-<link rel='shortlink' href='https://Drunkar.github.io/?p=1694' />
-<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://Drunkar.github.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flocalhost%2Fwordpress%2F2016%2F08%2F24%2Fopenscad-test-circleci%2F" />
-<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://Drunkar.github.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flocalhost%2Fwordpress%2F2016%2F08%2F24%2Fopenscad-test-circleci%2F&#038;format=xml" />
+<link rel='shortlink' href='https://drunkar.github.io/blog_sekailab/?p=1694' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://drunkar.github.io/blog_sekailab/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flocalhost%2Fwordpress%2F2016%2F08%2F24%2Fopenscad-test-circleci%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://drunkar.github.io/blog_sekailab/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flocalhost%2Fwordpress%2F2016%2F08%2F24%2Fopenscad-test-circleci%2F&#038;format=xml" />
 <script type="text/javascript">
 (function(url){
 	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
@@ -124,12 +124,12 @@ a, .button.hollow, .breadcrumbs a, .color-reverse:hover, .posts__item h2 a:hover
 	for (var i = 0; i < evts.length; i++) {
 		addEvent(evts[i], logHuman);
 	}
-})('//Drunkar.github.io/?wordfence_lh=1&hid=BCDB4E55FAF5AFF1DCABC64AC8A96D1F');
-</script><script type="text/javascript" src="//Drunkar.github.io/?wordfence_syncAttackData=1738930810.2799" async></script>            <style id="wpp-loading-animation-styles">@-webkit-keyframes bgslide{from{background-position-x:0}to{background-position-x:-200%}}@keyframes bgslide{from{background-position-x:0}to{background-position-x:-200%}}.wpp-widget-placeholder,.wpp-widget-block-placeholder,.wpp-shortcode-placeholder{margin:0 auto;width:60px;height:3px;background:#dd3737;background:linear-gradient(90deg,#dd3737 0%,#571313 10%,#dd3737 100%);background-size:200% auto;border-radius:3px;-webkit-animation:bgslide 1s infinite linear;animation:bgslide 1s infinite linear}</style>
-            <link rel="icon" href="https://Drunkar.github.io/wp-content/uploads/2018/01/cropped-fabicon_large-32x32.png" sizes="32x32" />
-<link rel="icon" href="https://Drunkar.github.io/wp-content/uploads/2018/01/cropped-fabicon_large-192x192.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="https://Drunkar.github.io/wp-content/uploads/2018/01/cropped-fabicon_large-180x180.png" />
-<meta name="msapplication-TileImage" content="https://Drunkar.github.io/wp-content/uploads/2018/01/cropped-fabicon_large-270x270.png" />
+})('//drunkar.github.io/blog_sekailab/?wordfence_lh=1&hid=DE7263B1026B3EADE034E2DDD8B596E0');
+</script><script type="text/javascript" src="//drunkar.github.io/blog_sekailab/?wordfence_syncAttackData=1738933654.7934" async></script>            <style id="wpp-loading-animation-styles">@-webkit-keyframes bgslide{from{background-position-x:0}to{background-position-x:-200%}}@keyframes bgslide{from{background-position-x:0}to{background-position-x:-200%}}.wpp-widget-placeholder,.wpp-widget-block-placeholder,.wpp-shortcode-placeholder{margin:0 auto;width:60px;height:3px;background:#dd3737;background:linear-gradient(90deg,#dd3737 0%,#571313 10%,#dd3737 100%);background-size:200% auto;border-radius:3px;-webkit-animation:bgslide 1s infinite linear;animation:bgslide 1s infinite linear}</style>
+            <link rel="icon" href="https://drunkar.github.io/blog_sekailab/wp-content/uploads/2018/01/cropped-fabicon_large-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://drunkar.github.io/blog_sekailab/wp-content/uploads/2018/01/cropped-fabicon_large-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://drunkar.github.io/blog_sekailab/wp-content/uploads/2018/01/cropped-fabicon_large-180x180.png" />
+<meta name="msapplication-TileImage" content="https://drunkar.github.io/blog_sekailab/wp-content/uploads/2018/01/cropped-fabicon_large-270x270.png" />
 		<style type="text/css" id="wp-custom-css">
 			body {
 	font-family: 'Noto Sans Japanese', SourceHanSansJP-Light, YuGothic, 'Yu Gothic', "游ゴシック体", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "MS PGothic", Arial, Helvetica, Verdana, sans-serif;
@@ -468,14 +468,14 @@ p {
 	<div class="site-header__inner" itemscope itemtype="http://schema.org/WPHeader">
 		<div class="site-header__col-left">
 			<p class="site-header__logo" itemscope itemtype="http://schema.org/Organization" itemprop="publisher" id="data-site" role="banner">
-		<a href="https://Drunkar.github.io/" class="custom-logo-link" rel="home"><img width="4301" height="1101" src="https://Drunkar.github.io/wp-content/uploads/2018/01/cropped-title_wc_retina-1024x407-03.png" class="custom-logo" alt="せかいらぼ" decoding="async" fetchpriority="high" srcset="https://Drunkar.github.io/wp-content/uploads/2018/01/cropped-title_wc_retina-1024x407-03.png 4301w, https://Drunkar.github.io/wp-content/uploads/2018/01/cropped-title_wc_retina-1024x407-03-300x77.png 300w, https://Drunkar.github.io/wp-content/uploads/2018/01/cropped-title_wc_retina-1024x407-03-768x197.png 768w, https://Drunkar.github.io/wp-content/uploads/2018/01/cropped-title_wc_retina-1024x407-03-1024x262.png 1024w" sizes="(max-width: 4301px) 100vw, 4301px" /></a>	<meta itemprop="name" content="せかいらぼ">
+		<a href="https://drunkar.github.io/blog_sekailab/" class="custom-logo-link" rel="home"><img width="4301" height="1101" src="https://drunkar.github.io/blog_sekailab/wp-content/uploads/2018/01/cropped-title_wc_retina-1024x407-03.png" class="custom-logo" alt="せかいらぼ" decoding="async" fetchpriority="high" srcset="https://drunkar.github.io/blog_sekailab/wp-content/uploads/2018/01/cropped-title_wc_retina-1024x407-03.png 4301w, https://drunkar.github.io/blog_sekailab/wp-content/uploads/2018/01/cropped-title_wc_retina-1024x407-03-300x77.png 300w, https://drunkar.github.io/blog_sekailab/wp-content/uploads/2018/01/cropped-title_wc_retina-1024x407-03-768x197.png 768w, https://drunkar.github.io/blog_sekailab/wp-content/uploads/2018/01/cropped-title_wc_retina-1024x407-03-1024x262.png 1024w" sizes="(max-width: 4301px) 100vw, 4301px" /></a>	<meta itemprop="name" content="せかいらぼ">
 		<meta itemprop="description" content="">
 </p>						<nav class="site-header__menu" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
-				<ul id="menu-menu" class="primary-menu"><li id="menu-item-2027" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2027"><a href="https://Drunkar.github.io/category/articles/">articles</a></li>
-<li id="menu-item-2028" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2028"><a href="https://Drunkar.github.io/category/stories/">stories</a></li>
-<li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822"><a href="https://Drunkar.github.io/about/">about</a></li>
+				<ul id="menu-menu" class="primary-menu"><li id="menu-item-2027" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2027"><a href="https://drunkar.github.io/blog_sekailab/category/articles/">articles</a></li>
+<li id="menu-item-2028" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2028"><a href="https://drunkar.github.io/blog_sekailab/category/stories/">stories</a></li>
+<li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822"><a href="https://drunkar.github.io/blog_sekailab/about/">about</a></li>
 </ul>			</nav>
-						<form class="site-header__search-form" id="searchForm" method="get" aria-hidden="true" role="search" action="https://Drunkar.github.io/">
+						<form class="site-header__search-form" id="searchForm" method="get" aria-hidden="true" role="search" action="https://drunkar.github.io/blog_sekailab/">
 				<input class="site-header__search-input" type="text" name="s" placeholder="検索...">
 			</form>
 		</div>
@@ -495,21 +495,21 @@ p {
 						<article id="post-1694" class="post-1694 post type-post status-publish format-standard has-post-thumbnail hentry category-articles tag-make tag-openscad" itemscope itemtype="http://schema.org/BlogPosting" itemref="data-site">
 				<nav>
 					<ul class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
-												<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="https://Drunkar.github.io/" rel="home" itemprop="item"><span itemprop="name">ホーム</span></a><meta itemprop="position" content="1"></li>
-												<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="https://Drunkar.github.io/category/articles/" itemprop="item"><span itemprop="name">articles</span></a><meta itemprop="position" content="2"></li>
+												<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="https://drunkar.github.io/blog_sekailab/" rel="home" itemprop="item"><span itemprop="name">ホーム</span></a><meta itemprop="position" content="1"></li>
+												<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="https://drunkar.github.io/blog_sekailab/category/articles/" itemprop="item"><span itemprop="name">articles</span></a><meta itemprop="position" content="2"></li>
 						<li class="current" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="item name">OpenSCADのテスト with CircleCI</span><meta itemprop="position" content="3"></li>
 					</ul>
 				</nav>
 				<header class="post__header">
 										<div class="post__thumb" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-						<img width="820" height="642" src="https://Drunkar.github.io/wp-content/uploads/2016/08/81b270d2b77f26c6fe2e1f68ba40905a-1024x802.png" class="attachment-large size-large wp-post-image" alt="" itemprop="thumbnail" decoding="async" srcset="https://Drunkar.github.io/wp-content/uploads/2016/08/81b270d2b77f26c6fe2e1f68ba40905a-1024x802.png 1024w, https://Drunkar.github.io/wp-content/uploads/2016/08/81b270d2b77f26c6fe2e1f68ba40905a-300x235.png 300w, https://Drunkar.github.io/wp-content/uploads/2016/08/81b270d2b77f26c6fe2e1f68ba40905a-768x602.png 768w, https://Drunkar.github.io/wp-content/uploads/2016/08/81b270d2b77f26c6fe2e1f68ba40905a.png 1312w" sizes="(max-width: 820px) 100vw, 820px" />						<meta itemprop="name" content="">
-						<meta itemprop="url" content="https://Drunkar.github.io/wp-content/uploads/2016/08/81b270d2b77f26c6fe2e1f68ba40905a.png">
+						<img width="820" height="642" src="https://drunkar.github.io/blog_sekailab/wp-content/uploads/2016/08/81b270d2b77f26c6fe2e1f68ba40905a-1024x802.png" class="attachment-large size-large wp-post-image" alt="" itemprop="thumbnail" decoding="async" srcset="https://drunkar.github.io/blog_sekailab/wp-content/uploads/2016/08/81b270d2b77f26c6fe2e1f68ba40905a-1024x802.png 1024w, https://drunkar.github.io/blog_sekailab/wp-content/uploads/2016/08/81b270d2b77f26c6fe2e1f68ba40905a-300x235.png 300w, https://drunkar.github.io/blog_sekailab/wp-content/uploads/2016/08/81b270d2b77f26c6fe2e1f68ba40905a-768x602.png 768w, https://drunkar.github.io/blog_sekailab/wp-content/uploads/2016/08/81b270d2b77f26c6fe2e1f68ba40905a.png 1312w" sizes="(max-width: 820px) 100vw, 820px" />						<meta itemprop="name" content="">
+						<meta itemprop="url" content="https://drunkar.github.io/blog_sekailab/wp-content/uploads/2016/08/81b270d2b77f26c6fe2e1f68ba40905a.png">
 						<meta itemprop="width" content="1312">
 						<meta itemprop="height" content="1028">
 					</div>
 															<div class="post__meta">
 											<div class="post__meta-top">
-							<span class="meta-top__cat"><a href="https://Drunkar.github.io/category/articles/" itemprop="genre">articles</a></span>
+							<span class="meta-top__cat"><a href="https://drunkar.github.io/blog_sekailab/category/articles/" itemprop="genre">articles</a></span>
 							<time class="meta-top__date" datetime="2016-08-24T20:24:21+09:00" itemprop='datePublished'>2016年8月24日</time>
 							<span class="meta-top__author" itemscope itemtype="http://schema.org/Person" itemprop="author">by Drunkar<meta itemprop="name" content="Drunkar"></span>
 						</div>
@@ -626,7 +626,7 @@ def test_build_all():
 					</div>
 					<footer class="post__sidebar" data-sticky-container>
 						<div class="sticky-content" data-sticky data-anchor="main-content" data-check-every="0">
-																					<ul class="post__tags"><li><a href="https://Drunkar.github.io/tag/make/" rel="tag">make</a></li><li><a href="https://Drunkar.github.io/tag/openscad/" rel="tag">openscad</a></li></ul>							<meta itemprop="keywords" content="make, openscad, ">
+																					<ul class="post__tags"><li><a href="https://drunkar.github.io/blog_sekailab/tag/make/" rel="tag">make</a></li><li><a href="https://drunkar.github.io/blog_sekailab/tag/openscad/" rel="tag">openscad</a></li></ul>							<meta itemprop="keywords" content="make, openscad, ">
 																											</div>
 					</footer>
 				</div>
@@ -640,13 +640,13 @@ def test_build_all():
 				<nav>
 										<ul class="post__preview-next">
 												<li>
-							<a href="https://Drunkar.github.io/2016/08/15/da-vinci-pro-1-0040-sd-card-error/">
+							<a href="https://drunkar.github.io/blog_sekailab/2016/08/15/da-vinci-pro-1-0040-sd-card-error/">
 								<i class="fa fa-angle-left"></i>
 								<span class="screen-reader-text">過去の投稿へ</span>
 							</a>
 						</li>
 						 						 						<li>
-							<a href="https://Drunkar.github.io/2016/09/03/da-vinci-pro-sli3er/">
+							<a href="https://drunkar.github.io/blog_sekailab/2016/09/03/da-vinci-pro-sli3er/">
 								<i class="fa fa-angle-right"></i>
 								<span class="screen-reader-text">次の投稿へ</span>
 							</a>
@@ -658,33 +658,33 @@ def test_build_all():
 		<h2>関連記事</h2>
 		<div class="related-post__container">
 								<div class="related-post__item">
-													<a class="related-post__item-thumb" href="https://Drunkar.github.io/2021/06/02/how-to-keep-higher-fitbit-sleep-score/" style="background-image: url('https://Drunkar.github.io/wp-content/uploads/2021/06/Screenshot_20210517-114704_Fitbit.jpg');"></a>
-												<h3 class="related-post__item-title"><a href="https://Drunkar.github.io/2021/06/02/how-to-keep-higher-fitbit-sleep-score/">fitbitの睡眠スコアを90弱で安定させる良い睡眠を続ける簡単な方法</a></h3>
+													<a class="related-post__item-thumb" href="https://drunkar.github.io/blog_sekailab/2021/06/02/how-to-keep-higher-fitbit-sleep-score/" style="background-image: url('https://drunkar.github.io/blog_sekailab/wp-content/uploads/2021/06/Screenshot_20210517-114704_Fitbit.jpg');"></a>
+												<h3 class="related-post__item-title"><a href="https://drunkar.github.io/blog_sekailab/2021/06/02/how-to-keep-higher-fitbit-sleep-score/">fitbitの睡眠スコアを90弱で安定させる良い睡眠を続ける簡単な方法</a></h3>
 						<time class="related-post__item-date timeago" id="relatedPostDate" datetime="2021-06-02T19:39:08+09:00">20210602</time>
 					</div>
 									<div class="related-post__item">
-													<a class="related-post__item-thumb" href="https://Drunkar.github.io/2021/05/27/m1-ipad-pro-12-9-2021-best-usb-c-hub/" style="background-image: url('https://Drunkar.github.io/wp-content/uploads/2021/05/20210524_123510.jpg');"></a>
-												<h3 class="related-post__item-title"><a href="https://Drunkar.github.io/2021/05/27/m1-ipad-pro-12-9-2021-best-usb-c-hub/">m1 ipad pro 12.9 2021のusb-cハブはコレがベスト</a></h3>
+													<a class="related-post__item-thumb" href="https://drunkar.github.io/blog_sekailab/2021/05/27/m1-ipad-pro-12-9-2021-best-usb-c-hub/" style="background-image: url('https://drunkar.github.io/blog_sekailab/wp-content/uploads/2021/05/20210524_123510.jpg');"></a>
+												<h3 class="related-post__item-title"><a href="https://drunkar.github.io/blog_sekailab/2021/05/27/m1-ipad-pro-12-9-2021-best-usb-c-hub/">m1 ipad pro 12.9 2021のusb-cハブはコレがベスト</a></h3>
 						<time class="related-post__item-date timeago" id="relatedPostDate" datetime="2021-05-27T18:30:02+09:00">20210527</time>
 					</div>
 									<div class="related-post__item">
-													<a class="related-post__item-thumb" href="https://Drunkar.github.io/2021/05/04/downgrade-mac-osx-to-play-genshin/" style="background-image: url('https://Drunkar.github.io/wp-content/uploads/2021/05/E0MkZlWUUAI0kDw.jpg');"></a>
-												<h3 class="related-post__item-title"><a href="https://Drunkar.github.io/2021/05/04/downgrade-mac-osx-to-play-genshin/">Time Machine不要！Macを11.2.3にダウングレードして原神をm1 macbook airでプレイする</a></h3>
+													<a class="related-post__item-thumb" href="https://drunkar.github.io/blog_sekailab/2021/05/04/downgrade-mac-osx-to-play-genshin/" style="background-image: url('https://drunkar.github.io/blog_sekailab/wp-content/uploads/2021/05/E0MkZlWUUAI0kDw.jpg');"></a>
+												<h3 class="related-post__item-title"><a href="https://drunkar.github.io/blog_sekailab/2021/05/04/downgrade-mac-osx-to-play-genshin/">Time Machine不要！Macを11.2.3にダウングレードして原神をm1 macbook airでプレイする</a></h3>
 						<time class="related-post__item-date timeago" id="relatedPostDate" datetime="2021-05-04T16:18:10+09:00">20210504</time>
 					</div>
 									<div class="related-post__item">
-													<a class="related-post__item-thumb" href="https://Drunkar.github.io/2021/02/23/mhz19c-m5stickc-co2-monitoring/" style="background-image: url('https://Drunkar.github.io/wp-content/uploads/2021/02/EtwpwVtU0AAUD7E.jpg');"></a>
-												<h3 class="related-post__item-title"><a href="https://Drunkar.github.io/2021/02/23/mhz19c-m5stickc-co2-monitoring/">MH-Z19CとM5StickCで二酸化炭素濃度モニタリング</a></h3>
+													<a class="related-post__item-thumb" href="https://drunkar.github.io/blog_sekailab/2021/02/23/mhz19c-m5stickc-co2-monitoring/" style="background-image: url('https://drunkar.github.io/blog_sekailab/wp-content/uploads/2021/02/EtwpwVtU0AAUD7E.jpg');"></a>
+												<h3 class="related-post__item-title"><a href="https://drunkar.github.io/blog_sekailab/2021/02/23/mhz19c-m5stickc-co2-monitoring/">MH-Z19CとM5StickCで二酸化炭素濃度モニタリング</a></h3>
 						<time class="related-post__item-date timeago" id="relatedPostDate" datetime="2021-02-23T19:25:31+09:00">20210223</time>
 					</div>
 									<div class="related-post__item">
-													<a class="related-post__item-thumb" href="https://Drunkar.github.io/2021/01/04/avegant-glyph-hack-binzume-altglyph/" style="background-image: url('https://Drunkar.github.io/wp-content/uploads/2021/01/20210102_223754.jpg');"></a>
-												<h3 class="related-post__item-title"><a href="https://Drunkar.github.io/2021/01/04/avegant-glyph-hack-binzume-altglyph/">【神軽量HMD】Avegant Glyph 改造: 瓶詰堂さんのaltglyphを作った</a></h3>
+													<a class="related-post__item-thumb" href="https://drunkar.github.io/blog_sekailab/2021/01/04/avegant-glyph-hack-binzume-altglyph/" style="background-image: url('https://drunkar.github.io/blog_sekailab/wp-content/uploads/2021/01/20210102_223754.jpg');"></a>
+												<h3 class="related-post__item-title"><a href="https://drunkar.github.io/blog_sekailab/2021/01/04/avegant-glyph-hack-binzume-altglyph/">【神軽量HMD】Avegant Glyph 改造: 瓶詰堂さんのaltglyphを作った</a></h3>
 						<time class="related-post__item-date timeago" id="relatedPostDate" datetime="2021-01-04T21:04:30+09:00">20210104</time>
 					</div>
 									<div class="related-post__item">
-													<a class="related-post__item-thumb" href="https://Drunkar.github.io/2020/08/24/pc-ipad-android-switch-usb-c-hub/" style="background-image: url('https://Drunkar.github.io/wp-content/uploads/2020/08/20200824_192601.jpg');"></a>
-												<h3 class="related-post__item-title"><a href="https://Drunkar.github.io/2020/08/24/pc-ipad-android-switch-usb-c-hub/">PC、iPad、Android、switchもドックいらず！あまりに万能なusb-cハブが最強だった</a></h3>
+													<a class="related-post__item-thumb" href="https://drunkar.github.io/blog_sekailab/2020/08/24/pc-ipad-android-switch-usb-c-hub/" style="background-image: url('https://drunkar.github.io/blog_sekailab/wp-content/uploads/2020/08/20200824_192601.jpg');"></a>
+												<h3 class="related-post__item-title"><a href="https://drunkar.github.io/blog_sekailab/2020/08/24/pc-ipad-android-switch-usb-c-hub/">PC、iPad、Android、switchもドックいらず！あまりに万能なusb-cハブが最強だった</a></h3>
 						<time class="related-post__item-date timeago" id="relatedPostDate" datetime="2020-08-24T19:30:38+09:00">20200824</time>
 					</div>
 						</div>
@@ -694,12 +694,12 @@ def test_build_all():
 	<h2>コメント</h2>
 	<div class="comments">
 			<div id="respond" class="comment-respond">
-		<h3 id="reply-title" class="comment-reply-title">コメントを返信する <small><a rel="nofollow" id="cancel-comment-reply-link" href="/wordpress/2016/08/24/openscad-test-circleci/#respond" style="display:none;">コメントをキャンセル</a></small></h3><form action="https://Drunkar.github.io/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">メールアドレスが公開されることはありません。</span> <span class="required-field-message"><span class="required">※</span> が付いている欄は必須項目です</span></p><textarea id="comment" name="comment" placeholder="コメント"></textarea><input name="author" type="text" value="" placeholder="名前 *" aria-required='true'>
+		<h3 id="reply-title" class="comment-reply-title">コメントを返信する <small><a rel="nofollow" id="cancel-comment-reply-link" href="/wordpress/2016/08/24/openscad-test-circleci/#respond" style="display:none;">コメントをキャンセル</a></small></h3><form action="https://drunkar.github.io/blog_sekailab/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">メールアドレスが公開されることはありません。</span> <span class="required-field-message"><span class="required">※</span> が付いている欄は必須項目です</span></p><textarea id="comment" name="comment" placeholder="コメント"></textarea><input name="author" type="text" value="" placeholder="名前 *" aria-required='true'>
 <input name="email" type="text" value="" placeholder="メール *" aria-required='true'>
 <input name="url" type="text" value="" placeholder="ウェブ">
 <p class="form-submit"><input name="submit" type="submit" id="submit" class="button" value="送信" /> <input type='hidden' name='comment_post_ID' value='1694' id='comment_post_ID' />
 <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="aed21f4ea7" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="175"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="aed21f4ea7" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="226"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
 		</div>
 </div>
 		</main>
@@ -722,36 +722,36 @@ def test_build_all():
 <h2 class="widgettitle">人気の投稿</h2>
 <ul class="wpp-list wpp-list-with-thumbnails">
 <li>
-<a href="https://Drunkar.github.io/2021/05/27/m1-ipad-pro-12-9-2021-best-usb-c-hub/" title="m1 ipad pro 12.9 2021のusb-cハブはコレがベスト" target="_self"><img src="https://Drunkar.github.io/wp-content/plugins/wordpress-popular-posts/assets/images/no_thumb.jpg" width="75" height="75" alt="" class="wpp-thumbnail wpp_featured wpp_def_no_src" decoding="async" loading="lazy"></a>
-<a href="https://Drunkar.github.io/2021/05/27/m1-ipad-pro-12-9-2021-best-usb-c-hub/" title="m1 ipad pro 12.9 2021のusb-cハブはコレがベスト" class="wpp-post-title" target="_self">m1 ipad pro 12.9 2021のusb...</a>
+<a href="https://drunkar.github.io/blog_sekailab/2021/05/27/m1-ipad-pro-12-9-2021-best-usb-c-hub/" title="m1 ipad pro 12.9 2021のusb-cハブはコレがベスト" target="_self"><img src="https://drunkar.github.io/blog_sekailab/wp-content/plugins/wordpress-popular-posts/assets/images/no_thumb.jpg" width="75" height="75" alt="" class="wpp-thumbnail wpp_featured wpp_def_no_src" decoding="async" loading="lazy"></a>
+<a href="https://drunkar.github.io/blog_sekailab/2021/05/27/m1-ipad-pro-12-9-2021-best-usb-c-hub/" title="m1 ipad pro 12.9 2021のusb-cハブはコレがベスト" class="wpp-post-title" target="_self">m1 ipad pro 12.9 2021のusb...</a>
 </li>
 </ul>
 </div>
 <div id="tag_cloud-3" class="sidebar-widgetarea widget widget_tag_cloud"><h2 class="widgettitle">タグクラウド</h2>
-<div class="tagcloud"><a href="https://Drunkar.github.io/tag/architecture/" class="tag-cloud-link tag-link-3 tag-link-position-1" style="font-size: 18.71875pt;" aria-label="architecture (18個の項目)">architecture</a>
-<a href="https://Drunkar.github.io/tag/aws/" class="tag-cloud-link tag-link-48 tag-link-position-2" style="font-size: 13.25pt;" aria-label="aws (5個の項目)">aws</a>
-<a href="https://Drunkar.github.io/tag/blender/" class="tag-cloud-link tag-link-132 tag-link-position-3" style="font-size: 14.015625pt;" aria-label="blender (6個の項目)">blender</a>
-<a href="https://Drunkar.github.io/tag/blockchain/" class="tag-cloud-link tag-link-135 tag-link-position-4" style="font-size: 12.375pt;" aria-label="blockchain (4個の項目)">blockchain</a>
-<a href="https://Drunkar.github.io/tag/cpp/" class="tag-cloud-link tag-link-5 tag-link-position-5" style="font-size: 15.65625pt;" aria-label="c++ (9個の項目)">c++</a>
-<a href="https://Drunkar.github.io/tag/design/" class="tag-cloud-link tag-link-51 tag-link-position-6" style="font-size: 12.375pt;" aria-label="design (4個の項目)">design</a>
-<a href="https://Drunkar.github.io/tag/docker/" class="tag-cloud-link tag-link-34 tag-link-position-7" style="font-size: 15.65625pt;" aria-label="docker (9個の項目)">docker</a>
-<a href="https://Drunkar.github.io/tag/drone/" class="tag-cloud-link tag-link-35 tag-link-position-8" style="font-size: 13.25pt;" aria-label="drone (5個の項目)">drone</a>
-<a href="https://Drunkar.github.io/tag/electric/" class="tag-cloud-link tag-link-17 tag-link-position-9" style="font-size: 18.171875pt;" aria-label="electric (16個の項目)">electric</a>
-<a href="https://Drunkar.github.io/tag/gcp/" class="tag-cloud-link tag-link-136 tag-link-position-10" style="font-size: 8pt;" aria-label="gcp (1個の項目)">gcp</a>
-<a href="https://Drunkar.github.io/tag/graphics/" class="tag-cloud-link tag-link-7 tag-link-position-11" style="font-size: 19.375pt;" aria-label="graphics (21個の項目)">graphics</a>
-<a href="https://Drunkar.github.io/tag/javascript/" class="tag-cloud-link tag-link-22 tag-link-position-12" style="font-size: 14.5625pt;" aria-label="javascript (7個の項目)">javascript</a>
-<a href="https://Drunkar.github.io/tag/life_hack/" class="tag-cloud-link tag-link-133 tag-link-position-13" style="font-size: 21.5625pt;" aria-label="life_hack (34個の項目)">life_hack</a>
-<a href="https://Drunkar.github.io/tag/machine_learning/" class="tag-cloud-link tag-link-20 tag-link-position-14" style="font-size: 20.140625pt;" aria-label="machine_learning (25個の項目)">machine_learning</a>
-<a href="https://Drunkar.github.io/tag/make/" class="tag-cloud-link tag-link-42 tag-link-position-15" style="font-size: 19.8125pt;" aria-label="make (23個の項目)">make</a>
-<a href="https://Drunkar.github.io/tag/openscad/" class="tag-cloud-link tag-link-44 tag-link-position-16" style="font-size: 9.96875pt;" aria-label="openscad (2個の項目)">openscad</a>
-<a href="https://Drunkar.github.io/tag/orange_pi/" class="tag-cloud-link tag-link-137 tag-link-position-17" style="font-size: 13.25pt;" aria-label="orange_pi (5個の項目)">orange_pi</a>
-<a href="https://Drunkar.github.io/tag/otaku/" class="tag-cloud-link tag-link-33 tag-link-position-18" style="font-size: 15.109375pt;" aria-label="otaku (8個の項目)">otaku</a>
-<a href="https://Drunkar.github.io/tag/processing/" class="tag-cloud-link tag-link-40 tag-link-position-19" style="font-size: 11.28125pt;" aria-label="processing (3個の項目)">processing</a>
-<a href="https://Drunkar.github.io/tag/python/" class="tag-cloud-link tag-link-30 tag-link-position-20" style="font-size: 22pt;" aria-label="python (37個の項目)">python</a>
-<a href="https://Drunkar.github.io/tag/top-posts/" class="tag-cloud-link tag-link-134 tag-link-position-21" style="font-size: 20.6875pt;" aria-label="top-posts (28個の項目)">top-posts</a>
-<a href="https://Drunkar.github.io/tag/ubuntu/" class="tag-cloud-link tag-link-138 tag-link-position-22" style="font-size: 8pt;" aria-label="ubuntu (1個の項目)">ubuntu</a>
-<a href="https://Drunkar.github.io/tag/unity/" class="tag-cloud-link tag-link-140 tag-link-position-23" style="font-size: 8pt;" aria-label="Unity (1個の項目)">Unity</a>
-<a href="https://Drunkar.github.io/tag/windows/" class="tag-cloud-link tag-link-139 tag-link-position-24" style="font-size: 13.25pt;" aria-label="windows (5個の項目)">windows</a></div>
+<div class="tagcloud"><a href="https://drunkar.github.io/blog_sekailab/tag/architecture/" class="tag-cloud-link tag-link-3 tag-link-position-1" style="font-size: 18.71875pt;" aria-label="architecture (18個の項目)">architecture</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/aws/" class="tag-cloud-link tag-link-48 tag-link-position-2" style="font-size: 13.25pt;" aria-label="aws (5個の項目)">aws</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/blender/" class="tag-cloud-link tag-link-132 tag-link-position-3" style="font-size: 14.015625pt;" aria-label="blender (6個の項目)">blender</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/blockchain/" class="tag-cloud-link tag-link-135 tag-link-position-4" style="font-size: 12.375pt;" aria-label="blockchain (4個の項目)">blockchain</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/cpp/" class="tag-cloud-link tag-link-5 tag-link-position-5" style="font-size: 15.65625pt;" aria-label="c++ (9個の項目)">c++</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/design/" class="tag-cloud-link tag-link-51 tag-link-position-6" style="font-size: 12.375pt;" aria-label="design (4個の項目)">design</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/docker/" class="tag-cloud-link tag-link-34 tag-link-position-7" style="font-size: 15.65625pt;" aria-label="docker (9個の項目)">docker</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/drone/" class="tag-cloud-link tag-link-35 tag-link-position-8" style="font-size: 13.25pt;" aria-label="drone (5個の項目)">drone</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/electric/" class="tag-cloud-link tag-link-17 tag-link-position-9" style="font-size: 18.171875pt;" aria-label="electric (16個の項目)">electric</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/gcp/" class="tag-cloud-link tag-link-136 tag-link-position-10" style="font-size: 8pt;" aria-label="gcp (1個の項目)">gcp</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/graphics/" class="tag-cloud-link tag-link-7 tag-link-position-11" style="font-size: 19.375pt;" aria-label="graphics (21個の項目)">graphics</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/javascript/" class="tag-cloud-link tag-link-22 tag-link-position-12" style="font-size: 14.5625pt;" aria-label="javascript (7個の項目)">javascript</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/life_hack/" class="tag-cloud-link tag-link-133 tag-link-position-13" style="font-size: 21.5625pt;" aria-label="life_hack (34個の項目)">life_hack</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/machine_learning/" class="tag-cloud-link tag-link-20 tag-link-position-14" style="font-size: 20.140625pt;" aria-label="machine_learning (25個の項目)">machine_learning</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/make/" class="tag-cloud-link tag-link-42 tag-link-position-15" style="font-size: 19.8125pt;" aria-label="make (23個の項目)">make</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/openscad/" class="tag-cloud-link tag-link-44 tag-link-position-16" style="font-size: 9.96875pt;" aria-label="openscad (2個の項目)">openscad</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/orange_pi/" class="tag-cloud-link tag-link-137 tag-link-position-17" style="font-size: 13.25pt;" aria-label="orange_pi (5個の項目)">orange_pi</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/otaku/" class="tag-cloud-link tag-link-33 tag-link-position-18" style="font-size: 15.109375pt;" aria-label="otaku (8個の項目)">otaku</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/processing/" class="tag-cloud-link tag-link-40 tag-link-position-19" style="font-size: 11.28125pt;" aria-label="processing (3個の項目)">processing</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/python/" class="tag-cloud-link tag-link-30 tag-link-position-20" style="font-size: 22pt;" aria-label="python (37個の項目)">python</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/top-posts/" class="tag-cloud-link tag-link-134 tag-link-position-21" style="font-size: 20.6875pt;" aria-label="top-posts (28個の項目)">top-posts</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/ubuntu/" class="tag-cloud-link tag-link-138 tag-link-position-22" style="font-size: 8pt;" aria-label="ubuntu (1個の項目)">ubuntu</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/unity/" class="tag-cloud-link tag-link-140 tag-link-position-23" style="font-size: 8pt;" aria-label="Unity (1個の項目)">Unity</a>
+<a href="https://drunkar.github.io/blog_sekailab/tag/windows/" class="tag-cloud-link tag-link-139 tag-link-position-24" style="font-size: 13.25pt;" aria-label="windows (5個の項目)">windows</a></div>
 </div></aside>	</div>
 
 	<footer class="site-footer" id="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -761,14 +761,14 @@ def test_build_all():
 		</div>
 		<p class="copyright">Copyright 2018 @Drunkar</p>
 	</footer>
-	<link rel='stylesheet' id='toc-screen-css' href='https://Drunkar.github.io/wp-content/plugins/table-of-contents-plus/screen.min.css?ver=2309' type='text/css' media='all' />
+	<link rel='stylesheet' id='toc-screen-css' href='https://drunkar.github.io/blog_sekailab/wp-content/plugins/table-of-contents-plus/screen.min.css?ver=2309' type='text/css' media='all' />
 <style id='toc-screen-inline-css' type='text/css'>
 div#toc_container {background: #f9f9f9;border: 1px solid #aaaaaa;}
 </style>
-<script type="text/javascript" src="https://Drunkar.github.io/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
-<script type="text/javascript" src="https://Drunkar.github.io/wp-includes/js/jquery/ui/tooltip.min.js?ver=1.13.3" id="jquery-ui-tooltip-js"></script>
-<script type="text/javascript" src="https://Drunkar.github.io/wp-content/themes/tokimeki/asset/js/foundation.min.js" id="foundation-js"></script>
-<script type="text/javascript" src="https://Drunkar.github.io/wp-includes/js/dist/vendor/moment.min.js?ver=2.30.1" id="moment-js"></script>
+<script type="text/javascript" src="https://drunkar.github.io/blog_sekailab/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="https://drunkar.github.io/blog_sekailab/wp-includes/js/jquery/ui/tooltip.min.js?ver=1.13.3" id="jquery-ui-tooltip-js"></script>
+<script type="text/javascript" src="https://drunkar.github.io/blog_sekailab/wp-content/themes/tokimeki/asset/js/foundation.min.js" id="foundation-js"></script>
+<script type="text/javascript" src="https://drunkar.github.io/blog_sekailab/wp-includes/js/dist/vendor/moment.min.js?ver=2.30.1" id="moment-js"></script>
 <script type="text/javascript" id="moment-js-after">
 /* <![CDATA[ */
 moment.updateLocale( 'ja', {"months":["1\u6708","2\u6708","3\u6708","4\u6708","5\u6708","6\u6708","7\u6708","8\u6708","9\u6708","10\u6708","11\u6708","12\u6708"],"monthsShort":["1\u6708","2\u6708","3\u6708","4\u6708","5\u6708","6\u6708","7\u6708","8\u6708","9\u6708","10\u6708","11\u6708","12\u6708"],"weekdays":["\u65e5\u66dc\u65e5","\u6708\u66dc\u65e5","\u706b\u66dc\u65e5","\u6c34\u66dc\u65e5","\u6728\u66dc\u65e5","\u91d1\u66dc\u65e5","\u571f\u66dc\u65e5"],"weekdaysShort":["\u65e5","\u6708","\u706b","\u6c34","\u6728","\u91d1","\u571f"],"week":{"dow":1},"longDateFormat":{"LT":"g:i A","LTS":null,"L":null,"LL":"Y\u5e74n\u6708j\u65e5","LLL":"Y\u5e74n\u6708j\u65e5 g:i A","LLLL":null}} );
@@ -779,20 +779,20 @@ moment.updateLocale( 'ja', {"months":["1\u6708","2\u6708","3\u6708","4\u6708","5
 var wplocale = {"momentlocale":"en"};
 /* ]]> */
 </script>
-<script type="text/javascript" src="https://Drunkar.github.io/wp-content/themes/tokimeki/asset/js/script.js" id="tokimeki-script-js"></script>
+<script type="text/javascript" src="https://drunkar.github.io/blog_sekailab/wp-content/themes/tokimeki/asset/js/script.js" id="tokimeki-script-js"></script>
 <script type="text/javascript" id="wpfront-scroll-top-js-extra">
 /* <![CDATA[ */
-var wpfront_scroll_top_data = {"data":{"css":"#wpfront-scroll-top-container{display:none;position:fixed;cursor:pointer;z-index:9999;opacity:0}#wpfront-scroll-top-container div.text-holder{padding:3px 10px;border-radius:3px;-webkit-border-radius:3px;-webkit-box-shadow:4px 4px 5px 0 rgba(50,50,50,.5);-moz-box-shadow:4px 4px 5px 0 rgba(50,50,50,.5);box-shadow:4px 4px 5px 0 rgba(50,50,50,.5)}#wpfront-scroll-top-container a{outline-style:none;box-shadow:none;text-decoration:none}            @media screen and (max-device-width: 640px) {\n                #wpfront-scroll-top-container {\n                    visibility: hidden;\n                }\n            }\n            #wpfront-scroll-top-container {right: 20px;bottom: 20px;}        #wpfront-scroll-top-container img {\n            width: auto;\n            height: auto;\n        }\n        ","html":"<div id=\"wpfront-scroll-top-container\"><img src=\"https:\/\/Drunkar.github.io\/wp-content\/plugins\/wpfront-scroll-top\/images\/icons\/36.png\" alt=\"\" title=\"\" \/><\/div>","data":{"hide_iframe":false,"button_fade_duration":200,"auto_hide":true,"auto_hide_after":2,"scroll_offset":100,"button_opacity":0.7,"button_action":"top","button_action_element_selector":"","button_action_container_selector":"html, body","button_action_element_offset":0,"scroll_duration":400}}};
+var wpfront_scroll_top_data = {"data":{"css":"#wpfront-scroll-top-container{display:none;position:fixed;cursor:pointer;z-index:9999;opacity:0}#wpfront-scroll-top-container div.text-holder{padding:3px 10px;border-radius:3px;-webkit-border-radius:3px;-webkit-box-shadow:4px 4px 5px 0 rgba(50,50,50,.5);-moz-box-shadow:4px 4px 5px 0 rgba(50,50,50,.5);box-shadow:4px 4px 5px 0 rgba(50,50,50,.5)}#wpfront-scroll-top-container a{outline-style:none;box-shadow:none;text-decoration:none}            @media screen and (max-device-width: 640px) {\n                #wpfront-scroll-top-container {\n                    visibility: hidden;\n                }\n            }\n            #wpfront-scroll-top-container {right: 20px;bottom: 20px;}        #wpfront-scroll-top-container img {\n            width: auto;\n            height: auto;\n        }\n        ","html":"<div id=\"wpfront-scroll-top-container\"><img src=\"https:\/\/drunkar.github.io\/blog_sekailab\/wp-content\/plugins\/wpfront-scroll-top\/images\/icons\/36.png\" alt=\"\" title=\"\" \/><\/div>","data":{"hide_iframe":false,"button_fade_duration":200,"auto_hide":true,"auto_hide_after":2,"scroll_offset":100,"button_opacity":0.7,"button_action":"top","button_action_element_selector":"","button_action_container_selector":"html, body","button_action_element_offset":0,"scroll_duration":400}}};
 /* ]]> */
 </script>
-<script src="https://Drunkar.github.io/wp-content/plugins/wpfront-scroll-top/js/wpfront-scroll-top.min.js?ver=2.2.10081" id="wpfront-scroll-top-js" async="async" defer="defer"></script>
+<script src="https://drunkar.github.io/blog_sekailab/wp-content/plugins/wpfront-scroll-top/js/wpfront-scroll-top.min.js?ver=2.2.10081" id="wpfront-scroll-top-js" async="async" defer="defer"></script>
 <script type="text/javascript" id="toc-front-js-extra">
 /* <![CDATA[ */
 var tocplus = {"smooth_scroll":"1"};
 /* ]]> */
 </script>
-<script type="text/javascript" src="https://Drunkar.github.io/wp-content/plugins/table-of-contents-plus/front.min.js?ver=2309" id="toc-front-js"></script>
-<script defer type="text/javascript" src="https://Drunkar.github.io/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1711284545" id="akismet-frontend-js"></script>
+<script type="text/javascript" src="https://drunkar.github.io/blog_sekailab/wp-content/plugins/table-of-contents-plus/front.min.js?ver=2309" id="toc-front-js"></script>
+<script defer type="text/javascript" src="https://drunkar.github.io/blog_sekailab/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1711284545" id="akismet-frontend-js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
         <script>
           jQuery(function($) {

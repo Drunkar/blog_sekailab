@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- このサイトマップは、2025年2月7日の9:31 PMに、WordPress 用のオリジナル SEO プラグイン All in One SEO v4.5.9.1により動的生成されました。 -->
+<!-- このサイトマップは、2025年2月7日の10:19 PMに、WordPress 用のオリジナル SEO プラグイン All in One SEO v4.5.9.1により動的生成されました。 -->
 
-<?xml-stylesheet type="text/xsl" href="https://Drunkar.github.io/default-sitemap.xsl?sitemap=page"?>
+<?xml-stylesheet type="text/xsl" href="https://drunkar.github.io/blog_sekailab/default-sitemap.xsl?sitemap=page"?>
 <urlset
 	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 	xmlns:xhtml="http://www.w3.org/1999/xhtml"
 	xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
 >
 	<url>
-		<loc><![CDATA[https://Drunkar.github.io/banggood_coupon/]]></loc>
+		<loc><![CDATA[https://drunkar.github.io/blog_sekailab/banggood_coupon/]]></loc>
 		<lastmod><![CDATA[2019-05-15T14:09:59+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
@@ -17,7 +17,7 @@
 		</image:image>
 	</url>
 	<url>
-		<loc><![CDATA[https://Drunkar.github.io/about/]]></loc>
+		<loc><![CDATA[https://drunkar.github.io/blog_sekailab/about/]]></loc>
 		<lastmod><![CDATA[2018-01-06T15:41:39+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
